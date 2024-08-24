@@ -31,12 +31,10 @@ jobs:
       - name: Fix node-gyp and Python
         run: |
           if [[ "$RUNNER_OS" == "macOS" ]]; then
-            EXTRA_ARGS="--break-system-packages"
             brew install python-setuptools python-packaging
           else
-            EXTRA_ARGS=""
+            python3 -m pip install $EXTRA_ARGS packaging setuptools
           fi
-          python3 -m pip install $EXTRA_ARGS packaging setuptools
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT

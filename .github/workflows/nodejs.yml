@@ -19,7 +19,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-          - windows-latest
+          - windows-2019
       fail-fast: false
     steps:
       - name: Checkout

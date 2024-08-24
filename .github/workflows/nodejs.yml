@@ -5,6 +5,7 @@ on:
       - master
       - canary
   pull_request:
+  workflow_dispatch:
 defaults:
   run:
     shell: bash

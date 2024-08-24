@@ -10,7 +10,7 @@ defaults:
   run:
     shell: bash
 env:
-  NODE_VERSION: 20.x
+  NODE_VERSION: 18.x
 jobs:
   build:
     runs-on: ${{matrix.os}}
@@ -19,7 +19,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-          - windows-2019
+          - windows-latest
       fail-fast: false
     steps:
       - name: Checkout

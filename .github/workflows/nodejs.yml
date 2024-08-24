@@ -9,7 +9,7 @@ defaults:
   run:
     shell: bash
 env:
-  NODE_VERSION: 18.x
+  NODE_VERSION: 20.x
 jobs:
   build:
     runs-on: ${{matrix.os}}
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Fix node-gyp and Python
-        run: python3 -m pip install packaging setuptools
+        run: pip install --break-system-packages packaging setuptools
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT

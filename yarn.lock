@@ -1235,10 +1235,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^22.1.0":
-  version "22.5.0"
-  resolved "https://registry.npmjs.org/@types/node/-/node-22.5.0.tgz#10f01fe9465166b4cab72e75f60d8b99d019f958"
-  integrity sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==
+"@types/node@*", "@types/node@^22.1.0", "@types/node@~22.5.2":
+  version "22.5.2"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.5.2.tgz#e42344429702e69e28c839a7e16a8262a8086793"
+  integrity sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==
   dependencies:
     undici-types "~6.19.2"
 
@@ -1246,13 +1246,6 @@
   version "18.19.45"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.19.45.tgz#a9ebfe4c316a356be7ca11f753ecb2feda6d6bdf"
   integrity sha512-VZxPKNNhjKmaC1SUYowuXSRSMGyQGmQjvvA1xE4QZ0xce2kLtEhPDS+kqpCPBZYgqblCLQ2DAjSzmgCM5auvhA==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@~18.18.0":
-  version "18.18.14"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.18.14.tgz#26771c647f2842af57eb96191cd615d845164295"
-  integrity sha512-iSOeNeXYNYNLLOMDSVPvIFojclvMZ/HDY2dU17kUlcsOsSQETbWIslJbYLZgA+ox8g2XQwSHKTkght1a5X26lQ==
   dependencies:
     undici-types "~5.26.4"
 
